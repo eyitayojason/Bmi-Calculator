@@ -1,4 +1,6 @@
-name: bmi_calculator
+workflows:
+  bmi_calculator:
+    name: bmi_calculator
 description: A new Flutter application.
 
 version: 1.0.0+1
