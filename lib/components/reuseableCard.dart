@@ -1,7 +1,7 @@
 import 'package:bmi_calculator/Screens/input_page.dart';
 import 'package:flutter/material.dart';
 
-GenderType genderType;
+GenderType? genderType;
 
 class Reusablecard extends StatelessWidget {
   Reusablecard({
@@ -9,14 +9,16 @@ class Reusablecard extends StatelessWidget {
     this.cardChild,
     this.onPress,
   });
-  final Color color;
+  final Color? color;
   final cardChild;
-  final Function onPress;
+  final Function? onPress;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPress,
+      onTap: () {
+        onPress!();
+      },
       child: Container(
         height: double.infinity,
         child: cardChild,

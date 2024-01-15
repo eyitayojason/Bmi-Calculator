@@ -9,6 +9,7 @@ import '../constants.dart';
 import 'package:bmi_calculator/bmiBrain.dart';
 
 enum GenderType { male, female }
+
 int height = 120;
 var weight = 60;
 int age = 18;
@@ -19,7 +20,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  GenderType genderType;
+  GenderType? genderType;
 
   @override
   Widget build(BuildContext context) {

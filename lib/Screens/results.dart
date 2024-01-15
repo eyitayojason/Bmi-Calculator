@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class ResultsPage extends StatelessWidget {
   ResultsPage({this.bmiResult, this.interpretation, this.resultText});
 
-  final String bmiResult;
-  final String resultText;
-  final String interpretation;
+  final String? bmiResult;
+  final String? resultText;
+  final String? interpretation;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,17 +33,17 @@ class ResultsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     Text(
-                      resultText.toUpperCase(),
+                      resultText!.toUpperCase(),
                       textAlign: TextAlign.center,
                       style: kResultTextStyle,
                     ),
                     Text(
-                      bmiResult,
+                      bmiResult!,
                       textAlign: TextAlign.center,
                       style: kBMITextStyle,
                     ),
                     Text(
-                      interpretation,
+                      interpretation!,
                       textAlign: TextAlign.center,
                       style: kBodyTextStyle,
                     ),

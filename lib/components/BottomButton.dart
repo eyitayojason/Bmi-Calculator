@@ -3,13 +3,15 @@ import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
   final String calculate;
-  final Function navigate;
-  BottomButton({this.calculate, this.navigate});
+  final Function? navigate;
+  BottomButton({required this.calculate, required this.navigate});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: navigate,
+      onTap: () {
+        navigate!();
+      },
       child: Container(
         child: Center(
           child: Text(

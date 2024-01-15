@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const double genderIconSize = 80;
 
 class CardProperties1 extends StatelessWidget {
-  CardProperties1({this.gender, this.genderIcon});
+  CardProperties1({required this.gender, required this.genderIcon});
   final IconData genderIcon;
   final String gender;
 
